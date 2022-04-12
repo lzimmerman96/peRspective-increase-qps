@@ -48,7 +48,7 @@ prsp_score <- function(text, text_id = NULL,
     stop(stringr::str_glue("Invalid Model type provided.\n\nShould be one of the following:\n\n{peRspective::prsp_models %>% glue::glue_collapse('\n')}"))
   }
   
-  if (sleep <= 0.7) {
+  if (sleep <= 0.001) {
     warning("Beware: sleeps below 0.7s are sure to hit the ratelimit if you use the usual fee API")
   }
   
